@@ -1,0 +1,88 @@
+body{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #f2f2f2;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+/* Avatar styles */
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Row hover effect */
+tbody tr:hover {
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .avatar {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.drawer {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background-color: #343a40;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    color: white;
+}
+
+.drawer a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.drawer a:hover {
+    background-color: #575d63;
+}
+
+.drawer .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#drawerBtn {
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    background: none;
+    border: none;
+    outline: none;
+}

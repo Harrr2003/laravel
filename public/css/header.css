@@ -1,0 +1,207 @@
+.header {
+    width: 15%;
+    height: 100vh;
+    overflow: hidden;
+    border-right: 1px solid black;
+}
+
+.logo {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: grey;
+    font-size: 25px;
+    font-family: cursive;
+}
+
+.iconsDiv {
+    width: 100%;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.iconsDiv div {
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    overflow: hidden;
+    gap: 5px;
+    color: grey;
+}
+
+.iconsDiv i {
+    cursor: pointer;
+}
+
+.iconsDiv span {
+    cursor: pointer;
+}
+
+.iconsDiv label {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.logOut {
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.more {
+    width: 70%;
+    height: 10vh;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(128, 128, 128, 0.171);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.outBtn {
+    width: 10vh;
+    height: 5vh;
+    background-color: transparent;
+    border: none;
+    font-size: 17px;
+    cursor: pointer;
+    color: grey;
+    border-radius: 15px;
+}
+
+.outBtn:hover {
+    color: rgba(128, 128, 128, 0.514);
+    transition: 0.5s;
+}
+
+@media only screen and (max-width: 1020px) {
+    .iconsDiv span {
+        display: none;
+    }
+
+    .logo span {
+        font-size: 16px;
+    }
+}
+
+
+.searchPart {
+    position: relative;
+    overflow: hidden;
+    left: 205px;
+    animation-name: search;
+    animation-duration: 1s;
+    background: linear-gradient(315deg, #e6e6e6, #ffffff);
+    box-shadow: -5px -5px 10px rgba(128, 128, 128, 0.514),
+        5px 5px 10px rgba(128, 128, 128, 0.514);
+}
+
+@keyframes search {
+    0% {
+        left: 100px;
+    }
+
+    100% {
+        left: 205px;
+    }
+}
+.messagesDiv{
+    position: relative;
+    overflow: hidden;
+    left: 250px;
+    animation-name: messages;
+    animation-duration: 1s;
+    background: linear-gradient(315deg, #e6e6e6, #ffffff);
+    box-shadow: -5px -5px 10px rgba(128, 128, 128, 0.514),
+        5px 5px 10px rgba(128, 128, 128, 0.514);
+}
+
+
+
+@keyframes messages {
+    0%{
+        left: 205px;
+    }100%{
+        left: 250px;
+    }    
+}
+
+.notificationsDiv{
+    position: relative;
+    overflow: hidden;
+    left: 205px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    animation-name: notificationsDiv;
+    animation-duration: 1s;
+    background: linear-gradient(315deg, #e6e6e6, #ffffff);
+    box-shadow: -5px -5px 10px rgba(128, 128, 128, 0.514),
+        5px 5px 10px rgba(128, 128, 128, 0.514);
+}
+
+@keyframes notificationsDiv {
+    0%{
+        
+    }
+}
+
+
+.form {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-family: monospace;
+    font-size: 18px;
+}
+
+.form input {
+    width: 400px;
+    height: 50px;
+}
+
+.addButton {
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    color: grey;
+    background-color: rgb(37, 37, 151);
+}
+
+.createPart {
+    border-radius: 40px;
+    background: linear-gradient(315deg, #e6e6e6, #ffffff);
+    box-shadow: -5px -5px 10px rgba(128, 128, 128, 0.514),
+        5px 5px 10px rgba(128, 128, 128, 0.514);
+}
+
+@media only screen and (max-width: 1020px) {
+    .createPart input{
+        max-width: 100%;
+    }
+}
